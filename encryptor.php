@@ -36,8 +36,8 @@ interface EncryptorInterface {
 final class Encryptor implements EncryptorInterface {
     // This variable could be declared static for reuse when several instance will be created.
     private $primeNumbersCache = [
-        2,
-        3,
+        1 => 2,
+        2 => 3,
     ];
     private const CHARACTER_RANGE_LENGTH = 126 - 31;
 
